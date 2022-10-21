@@ -1,16 +1,13 @@
-// Pegamos o formulário e a div onde sai o resultado calculado
 const form = document.querySelector('#formulario');
-const resultado = document.querySelector('.resultado');
+const resultado = document.querySelector('.resultado');  // Aqui esta o formulário e a div onde sai o resultado calculado
 
 // Função para formulário
 function resultadoFormulario(event) {
-
-  // Previne o evento padrão do formulário
-  event.preventDefault();
   
-  // Pegamos os valores dos inputs
-  const inputPeso = document.querySelector('#peso').value;
-  const inputAltura = document.querySelector('#altura').value;
+  event.preventDefault(); // Prevenção do evento padrão do formulário
+    
+  const inputPeso = document.querySelector('#peso').value;      
+  const inputAltura = document.querySelector('#altura').value;   // Os valores dos inputs
 
   // Com os valores dos inputs obtidos, calculamos para obter o resultado do IMC ( Peso dividido por altura² )
   const imcTotal = (inputPeso / (inputAltura * inputAltura)).toFixed(2);
@@ -42,5 +39,5 @@ function resultadoFormulario(event) {
   }
 } 
 
-// Quando pressionar o botão, execute a função "resultadoFormulario"
+// Quando for pressionado o botão, ira executar a função "resultadoFormulario"
 form.addEventListener('submit', resultadoFormulario)
