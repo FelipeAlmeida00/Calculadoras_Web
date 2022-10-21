@@ -1,12 +1,16 @@
-/* Resets e configs  */
 body {
-  transition: all .3s ease; /* <== adiciona esse transition apenas para uma animação suave para o darkmode */
+  transition: all .3s ease;
   margin: 0;
   padding: 0;
   background: #FDFDFD;
   font-family: 'Raleway', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
+}
+
+h1{
+  text-align: center;
+
 }
 
 * {
@@ -18,7 +22,7 @@ body {
   max-width: 1200px;
 }
 
-.absolute-center { /* Centraliza absolutamente ao meio */
+.absolute-center {
 	position: absolute;
 	top: 45%;
 	left: 0;
@@ -28,15 +32,13 @@ body {
 	z-index: 20;
 }
 
-/* Chrome, Safari, Edge, Opera */
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* Resets e configs termina aqui */
 
-/* Formulário / calculadora */
 input::placeholder {
   font-size: 0.8em;
   font-weight: 200;
@@ -79,8 +81,8 @@ form input:focus {
 
 form button {
   border: none;
-  background: #FFC83D;
-  color: #fff;
+  background: red;
+  color: white;
   font-size: 1em;
   font-weight: 200;
   height: 50px;
@@ -92,15 +94,15 @@ form button {
 }
 
 form button:hover {
-  background: #ffcd4f
+  background: green;
+  color: aqua;
+  
 }
 
 strong {
   color: #ffc022;
 }
-/* Formulário / calculadora termina aqui */
 
-/* Responsivo */
 @media (min-width: 300px) and (max-width: 700px)  {
 
   #calculadora {
@@ -129,4 +131,3 @@ strong {
   }
 	
 }
-/* Responsivo termina aqui */
